@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about
+{
+    background: #55ffe5;
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.about-container
+{
+    margin-top: 30px;
+    width: 80%;
+    margin: 70px auto;
+}
+.contact-box{
+    background: white;
+    display: flex;
+    margin-top: 30px;
+
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: greenyellow;
+}
+h1{
+    margin-bottom: 50px;
+}
+about-container p{
+    margin-bottom: 40px;
+}
+.input-row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group
+{
+    flex-basis :45%;
+}
+input
+{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+button{
+    background: black;
+    width: 100px;
+    border:none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px ;
+}
+.contact-left h3{
+    color: blue;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+tr td:first-child{
+    padding-right: 20px;
+
+}
+tr td{
+    padding-top: 20px;
+}
