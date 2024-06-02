@@ -1,82 +1,117 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.about
-{
+
+.about {
     background: #55ffe5;
     font-size: 14px;
     font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
-.about-container
-{
-    margin-top: 30px;
+.about-container {
     width: 80%;
-    margin: 70px auto;
+    margin: 70px auto 30px;
 }
-.contact-box{
+
+.contact-box {
     background: white;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
+}
 
-}
-.contact-left{
-    flex-basis: 60%;
-    padding: 40px 60px;
-}
-.contact-right{
-    flex-basis: 40%;
+.contact-left, .contact-right {
+    flex: 1 1 100%;
     padding: 40px;
+}
+
+.contact-right {
     background-color: greenyellow;
 }
-h1{
+
+h1 {
     margin-bottom: 50px;
 }
-about-container p{
+
+.about-container p {
     margin-bottom: 40px;
 }
-.input-row
-{
+
+.input-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.input-row .input-group
-{
-    flex-basis :45%;
+
+.input-row .input-group {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
 }
-input
-{
+
+input {
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
     padding-bottom: 5px;
 }
-button{
+
+button {
     background: black;
     width: 100px;
-    border:none;
+    border: none;
     outline: none;
     color: #fff;
     height: 35px;
     border-radius: 30px;
-    margin-top: 20px ;
+    margin-top: 20px;
 }
-.contact-left h3{
+
+.contact-left h3 {
     color: blue;
     font-weight: 600;
     margin-bottom: 30px;
-
 }
-tr td:first-child{
+
+tr td:first-child {
     padding-right: 20px;
-
 }
-tr td{
+
+tr td {
     padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .contact-left {
+        flex: 1 1 60%;
+        padding: 40px 60px;
+    }
+
+    .contact-right {
+        flex: 1 1 40%;
+    }
+
+    .input-row .input-group {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-container {
+        width: 90%;
+    }
+
+    .contact-left, .contact-right {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
 }
